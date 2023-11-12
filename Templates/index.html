@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Sort App</title>
+</head>
+<body>
+    <h1>Bubble Sort App</h1>
+
+    <form method="post">
+        <label for="number_list">Enter a list of numbers (comma-separated):</label>
+        <input type="text" id="number_list" name="number_list" required>
+        <button type="submit">Sort</button>
+    </form>
+
+    {% if sorted_list %}
+        <h2>Sorted List:</h2>
+        <p>{{ sorted_list }}</p>
+    {% endif %}
+
+</body>
+</html>
